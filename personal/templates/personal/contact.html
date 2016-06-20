@@ -1,0 +1,39 @@
+{% include 'personal/includes/header7.html' %}
+
+<body class="body" style="background-color: #aaa">
+	<div class="container-fluid" style="min-height: 95%;">
+		<header>
+			<center><h1><b>Wanna send me a message?</b></h1></center>
+			<span class="byline"><font size="4"><b>
+				<center>					
+					Cool! &#9786;
+				</center></b></font>
+			</span>
+		</header><br><br><br>
+
+		<div class="container">
+			<section>
+				<form method="post" class="cf" style="margin-left: 400px">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="input-group-lg">
+							    {% csrf_token %}
+							    {{form}}
+							</div>
+						</div>					    
+					</div><br>
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="form-actions">
+							      <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</section>
+		</div>
+
+	</div>
+</body>
+
+{% include 'personal/includes/footer.html' %}
