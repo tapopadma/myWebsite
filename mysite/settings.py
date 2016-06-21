@@ -12,11 +12,11 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 
 import os
 
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'topcodertapopadma@gmail.com'
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'tapopadma'
 EMAIL_HOST_PASSWORD = os.environ['password_123']
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

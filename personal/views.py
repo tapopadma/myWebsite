@@ -32,9 +32,9 @@ def contact(request):
 			last_name = form.cleaned_data['last_name']
 			from_email = form.cleaned_data['from_email']
 			subject = form.cleaned_data['subject']			
-			message = 'FROM, '+first_name.upper()+' '+last_name.upper()+': '+form.cleaned_data['message']
+			message = 'SENT FROM YOUR PERSONAL WEBSITE: '+form.cleaned_data['message']
 			try:					
-				send_mail(subject, message, from_email, ['topcodertapopadma@gmail.com'])
+				send_mail(subject, message, from_email, ['tapopadmatripathy1995@gmail.com'], fail_silently=False)
 			except BadHeaderError:
 				return HttpResponse('Invalid header found.')
 			return thanks(request)
