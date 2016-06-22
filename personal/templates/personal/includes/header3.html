@@ -1,46 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+<html>
 
 <head>
 	<title>Tapopadma Tripathy | Home</title>
-	<meta charset="utf-8" />	
-	{% load staticfiles %}
-	<link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
-	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<style type="text/css">
 		html, 
 		body{
-			height: 100%;						
+			height: 100%;
 		}		
-	</style>		
+	</style>
+</head>
 
-	<div class="navbar navbar-default navbar-fixed-top navbar-inverse" style="background-color: #222">	
-		<div class="container">					
-			<div class="collapse navbar-collapse" id="additional">
-				<ul class="nav navbar-nav">
-					<li id="home">
-						<a href="/" style='margin-left:50px'>
-							<b><font size="4">Home</font></b>
-						</a>
-					</li>
-					<li id="aboutme"><a href="/aboutme"><b><font size="4">About Me</font></b></a></li>
-					<li id="skills"  class="active">
-						<a href="/skills"><b><font size="4">Skills</font></b></a>
-					</li>
-					<li id="career"><a href="/career"><b><font size="4">Career</font></b></a></li>
-					<li id="achievements">
-						<a href="/achievements">
-							<b><font size="4">Achievements</font></b>
-						</a>
-					</li>
-					<li id="blog"><a href="/blog"><b><font size="4">Blog</font></b></a></li>
-					<li id="contact"><a href="/contact"><b><font size="4">Contact</font></b></a></li>
-				</ul>
-				<p><font size="6" style="color: #aaa">&emsp;&emsp;<b>Tapopadma Tripathy</b></font></p>
+<body >
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+	 		<div class="navbar-header">
+	  			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+				    <span class="icon-bar"></span>
+				    <span class="icon-bar"></span>
+				    <span class="icon-bar"></span>
+			    </button>
+	  			<a class="navbar-brand" href="">
+	  				<font size="6" style="color: #aaa"><b>Tapopadma Tripathy</b></font>
+	  			</a>
 			</div>
-		</div>
-	</div><br><br><br><br>
-
-</head>	
+		    <div class="collapse navbar-collapse" id="menu">
+		        <ul class="nav navbar-nav pull-right">
+		        	<li><a href="/"><b><font size="4">Home</font></b></a></li>
+		        	<li><a href="/aboutme"><b><font size="4">About Me</font></b></a></li>
+		        	<li class="active"><a href="/skills"><b><font size="4">Skills</font></b></a></li>
+					<li><a href="/career"><b><font size="4">Career</font></b></a></li>
+					<li><a href="/achievements"><b><font size="4">Achievements</font></b></a></li>
+					<li><a href="/blog"><b><font size="4">Blog</font></b></a></li>
+					<li><a href="/contact"><b><font size="4">Contact</font></b></a></li>	            
+		        </ul>
+	    	</div>
+	    </div>
+	</nav>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body><br><br><br><br>
 
 </html>
