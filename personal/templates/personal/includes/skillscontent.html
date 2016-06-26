@@ -1,7 +1,73 @@
 {% block content %}
-<div class="container">
-	<p style="text-align: justify;margin-top: 100px;margin-bottom: 100px;"><font size="3">
-		Work Under Progress.
-	</font></p>	
-</div>
+<style>
+	p{
+		text-align: justify;		
+		margin-top: 20px;	
+		margin-left: 50px;
+		margin-right: 100px;
+		font-size: 16px;
+		padding-bottom: 50px;
+	}
+	h1{
+		color: purple;
+		font-weight: bold;
+		margin-top: 100px;
+		padding-bottom: 50px;
+	}
+	h2{
+		color: purple;
+		padding-left: 50px;
+		padding-bottom: 50px;
+	}
+	img {
+	    max-width: 100%;
+	    height: auto;
+	    width: auto\9; /* ie8 */
+	    padding-left: 50px;
+	    padding-bottom: 50px;
+	}
+	p span{
+		display: block;
+	}
+</style>
+{% load staticfiles %}
+<body class="body" style="background-color: #aaa">
+	<div class="container-fluid" style="height:3500px;">
+		<h1>Projects:</h1>		
+		<h2>Fingerprint Recognition System Development:</h2>
+		<img src="{% static 'personal/img/finger.png' %}"/>
+		<p>
+			<span>This was my final year project. It's objective is
+			to design a fingerprint recognition based biometric
+			system development. For this MATLAB tool boxes played
+			a vital role. Both for the GUI design and the image 
+			processing algorithm implementation MATLAB is good enough.
+			</span>
+			<span>
+				The GUI's purpose is to let the user load image from 
+				local disk onto it and find the matching score for 
+				each of the existing image from the local database 
+				with respect to the loaded image and finally give 
+				a verdict on SUCCESSFUL or UNSUCCESSFUL MATCH.
+			</span>
+		</p>
+		<h2>Python based 2D Game:</h2>
+		<img src="{% static 'personal/img/snake.PNG' %}">
+		<img src="{% static 'personal/img/snake_pause.PNG' %}">
+		<img src="{% static 'personal/img/snake_over.PNG' %}">
+		<p>
+			<span>
+				This was one of my second year project that was based on
+				python programming using pygame module. It involves designing
+				 2D images and controlling their motion as per various situations
+				  and events using certain algorithms.
+			</span>
+			<span>
+				After designing the game i had made it distributable by designing
+				a setup file of MSI(Microsoft Installer) type. 
+				To download the game click <a href="https://drive.google.com/open?id=0B8gA-6HW54yAU0N1THJhS2VKOVU" target="_blank">here</a>.
+			</span>
+		</p>
+	</div>
+</body>
 {% endblock %}

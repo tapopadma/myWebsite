@@ -1,11 +1,29 @@
 {% block content %}
-<div class="container">
-	<p style="text-align: justify;margin-top: 10px;margin-bottom: 100px;"><font size="3">
-		Hello! Welcome to my website! Well, I wasn't expecting guests. Umm, my name is Tapopadma. I am a competitive programmer. I have been taking part in a bunch of programming events through online websites like codeforces, codechef, hackerrank, hackerearth, Topcoder etc. Suddenly I went crazy about django framework because of its systematic project structure, easy-to-implement approach for both back-end and front-end developments. Hence I implemented this simple website on django framework. Frankly, This is my very first web development project.
-	</font></p>	
-
-	<p style="text-align: justify;margin-top: 100px;margin-bottom: 100px;"><font size="3">
-		This website contains sections having the brief details of my skills, career, life, hobbies. I will keep updating features of this website. Thank you for visiting my website.
-	</font></p>	
-</div>
+<style>
+	p{
+		text-align: justify;	
+		font-size: 16px;
+	}
+	p span{
+		display: block;
+	}
+</style>
+{% load staticfiles %}
+<body class="body" style="background-color: #aaa">
+	<div class="container-fluid" style="height: 1000px; padding-top:100px;">
+		<center>					
+			<img src="{% static 'personal/img/myprofile.jpg' %}">
+		</center>					
+		<h2 style="text-align:center;padding-top:50px;"><strong>Welcome to my website!</strong></h2>		
+		<p class="container">
+			<span>
+				Hi! Welcome to my website! My name is Tapopadma. I am a competitive programmer. I have been taking part in a bunch of programming events through online websites like codeforces, codechef, Topcoder, hackerearth, hackerrank  etc. Suddenly I went crazy about django framework because of its systematic project structure, easy-to-implement approach and good quality documentation for both back-end and front-end developments. Hence I implemented this simple website on django framework.	
+			</span>
+			<span>
+				Frankly, This is my very first web development project.
+				This website contains sections having the brief details of my skills, career, life, hobbies. I 	will keep updating features of this website. Thank you for visiting my website.
+			</span>			
+		</p>
+	</div>
+</body>
 {% endblock %}
