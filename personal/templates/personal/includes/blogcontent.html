@@ -1,7 +1,68 @@
 {% block content %}
-<div class="container">
-	<p style="text-align: justify;margin-top: 100px;margin-bottom: 100px;"><font size="3">
-		Work Under Progress.
-	</font></p>	
-</div>
+{% load staticfiles %}
+<style>
+	p{
+		text-align: justify;				
+		font-size: 16px;
+	}
+	p span{
+		display: block;
+	}
+	body{
+		background-image: url("{% static 'personal/img/marbel.jpg' %}");
+		background-size: cover;
+	}
+	h1{
+		text-align: center;
+		font-weight: bold;
+	}
+	h4{
+		text-align: center;		
+	}
+	h2{
+		padding-top: 50px;
+		font-weight: bold;
+		font-size: 20px;
+	}
+</style>
+<body class="body" style="background-color: #aaa;">
+	<div class="container-fluid" style="height: 1000px;border: 1px solid black;outline-color:black;outline-style: double;margin-top:100px;margin-bottom:100px;margin-left:50px;margin-right:50px;border-radius: 25px;">		
+		<div class="container">
+			<h1>How I developed and deployed this website!</h1>
+			<h4>Written on 26th June, 2016 at 23:30 IST</h4>
+			<h2>Framework:</h2>
+			<p>
+				<span>
+					In Website development it's recommended to choose a web framework that
+					 makes the developer's task simple. Likewise I chose one of the most popular
+					  <b>Django</b> web framework. 
+				</span>
+				<span>
+					Django provides a complete tutorial based <a href="https://www.djangoproject.com/">documentation</a>. Initially i got acquianted with the framework from the online documentation. Then i continued working on my project that is based on this framework.
+				</span>
+			</p>
+			<h2>Frontend:</h2>
+			<p>
+				<span>
+					For frontend design i went through few websites to get to know about Bootstrap, CSS etc.
+					Thus i started working on frontend development. This can be called as coding from scratch.
+					The webpage style, buttons, navigation bar, contact form and manymore elements are part of frontend desgin.
+				</span>				
+			</p>
+			<h2>Backend:</h2>
+			<p>
+				The most exciting thing about django is it can make web development possible without any php script. The backend program is written in pure python inside <b>views.py</b> which controls the backend operations. For the contact form existing in the <b>contact</b> section of this website I wrote simple python program in Django by applying <b>Jinja</b> variable concept.
+				For backend server connection I used the <b>smtp server</b> with host name <b>smtp.gmail.com</b> with a port number of <b>587</b>. 	Once the user enters data to the online form and clicks on submit button the message will be delivered to my email account.
+			</p>
+			<h2>Version Control:</h2>
+			<p>
+				For almost every software development process to be secured and efficient a version control tool is used. In my website for the website code to be stored in the web securedly I chose <b>GIT</b> as the version control tool and <a href="https://github.com/">github</a> as the corresponding website. 
+			</p>
+			<h2>Deployment</h2>			
+			<p>
+				Deployment is the final and most crucial stage of web development. Deployment not only helps create a customized domain name for your webapp, but also lets your localhost website move to the web and serve in real time. For Deployment process there are many web hosting platfroms like <a href="https://aws.amazon.com/">AWS</a>, <a href="https://cloud.digitalocean.com/">Digital Ocean</a>, <a href="https://in.godaddy.com/">GoDaddy</a>, <a href="https://devcenter.heroku.com/">Heroku</a>, <a href="https://console.ng.bluemix.net/">IBMbluemix</a>, <a href="http://pythonanywhere.com/">PythonAnyWhere</a> etc. Amongst all these <b>PythonAnyWhere</b> was my choice because of it's free hosting scheme alongwith simple method to deploy a server. I can easily pull the git changes to this server using online bash console available in there and just refresh the server in order to let the changes appear on the app.
+			</p>
+		</div>
+	</div>
+</body>	
 {% endblock %}
